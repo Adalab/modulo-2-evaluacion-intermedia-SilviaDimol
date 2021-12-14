@@ -31,7 +31,7 @@ function getComputerValue() {
 function handleClickPlay(event) {
     event.preventDefault();
     displayMessage()
-    changePoints()
+    getComputerValue()
 }
 //Listeners
 button.addEventListener('click', handleClickPlay);
