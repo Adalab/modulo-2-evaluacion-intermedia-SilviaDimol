@@ -6,6 +6,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
   }
 
  .title {
@@ -16,8 +17,10 @@ main {
 
  .form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
  }
+
+
   
