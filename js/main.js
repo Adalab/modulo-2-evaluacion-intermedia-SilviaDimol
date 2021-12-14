@@ -13,15 +13,15 @@ let triesNumber = 10;
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
-let r = getRandomNumber(max);
+let randomNumber = getRandomNumber(max);
 let computer =  Game();
 
 // Asociaciones número-objeto
 function Game() {
-  if (r < 3) {
+  if (randomNumber < 3) {
     console.log("El ordenador escoge la piedra");
     return "piedra";
-  } else if (r <= 6) {
+  } else if (randomNumber <= 6) {
     console.log("El ordenador escoge el papel");
     return "papel";
   } else {
