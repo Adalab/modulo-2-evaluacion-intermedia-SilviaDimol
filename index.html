@@ -2,31 +2,29 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Piedra, papel o tijera</title>
-        <link rel="stylesheet" href="./css/style.css" />
-
-    </head>
+</head>
 
 <body>
     <main class=“container”>
         <h1 class=“title”>Juego piedra, papel y tijera</h1>
         <form class=“form js-form”>
             <label class=“numberLabel” for=“numberInput”>Introduce aquí tu jugada</label>
-            <select name="select">
-                <option value="value1">Piedra</option>
-                <option value="value2">Papel</option>
-                <option value="value3">Tijeras</option>
+            <select name="select" class="js-valueSelection">
+                <option value="valueRock">Piedra</option>
+                <option value="valuePaper">Papel</option>
+                <option value="valueScissors">Tijeras</option>
             </select>
-            <button class="button" js-button” type=”submit” value=“Jugar”> Jugar</button>
+            <button class="button" js-button” type=”submit” value=“Jugar”>Jugar</button>
             <p class=“message js-message”>¡Vamos a jugar!</p>
             <p class="playerResult">Jugador:</p>
-            <input type=“number” id=“playerInput” name=“playerInput” class=“playerInput js-playerInput” />
+            <input type=“number” id=“playerResult” name=“playerResult” class=“playerResult js-playerResult” />
             <p class="computerResult">Ordenador:</p>
-            <input type=“number” id=“computerInput” name=“computerInput” class=“computerInput js-computerInput” />
+            <input type=“number” id=“computerResult” name=“computerResult” class=“computerResult js-computerResult” />
         </form>
     </main>
     <script type="text/javascript" src="./js/main.js"></script>
