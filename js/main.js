@@ -33,34 +33,18 @@ function Game() {
 function checkNumber() {
   const player = playerSelection.value;
   
-  if (player === "piedra") {
-    
-    if ( computer === "piedra") {
+  if (player === computer) {
       message.innerHTML = "empate";
-    } else if ( computer === "tijera") {
+    } else if ( computer === "tijera" && player === "piedra") {
       message.innerHTML = "has ganado";
-    } else if ( computer === "papel") {
-      message.innerHTML = "has perdido";
+    } else if ( computer === "papel" && player === "tijera") {
+      message.innerHTML = "has ganado";
+    } else if ( computer === "piedra" && player === "papel") {
+        message.innerHTML = "has ganado";
     }
-  }
    
-    else if (player === "tijera") {
-      if ( computer === "piedra") {
+    else {
         message.innerHTML = "has perdido";
-      } else if ( computer === "tijera") {
-        message.innerHTML = "empate";
-      } else if ( computer === "papel") {
-        message.innerHTML = "has ganado";
-      }
-} 
- else if (player === "papel") {
-      if ( computer === "piedra") {
-        message.innerHTML = "has perdido";
-      } else if ( computer === "tijera") {
-        message.innerHTML = "empate";
-      } else if ( computer === "papel") {
-        message.innerHTML = "has ganado";
-      }
     }
   }
 
@@ -72,7 +56,7 @@ function handleClick(ev) {
     triesNumber--;
     tries.innerHTML = `Tienes ${triesNumber} intentos`;
     checkNumber();
-    r = getRandomNumber(max);
+    randomNumber = getRandomNumber(max);
     computer =  Game();
   }
    else {
