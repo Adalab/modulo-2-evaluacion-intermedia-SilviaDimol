@@ -7,12 +7,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Piedra, papel o tijera</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
 
     </head>
 
 <body>
-    <main class=“Container”>
+    <main class=“container”>
         <h1 class=“title”>Juego piedra, papel y tijera</h1>
         <form class=“form js-form”>
             <label class=“numberLabel” for=“numberInput”>Introduce aquí tu jugada</label>
@@ -23,11 +23,13 @@
             </select>
             <button class="button" js-button” type=”submit” value=“Jugar”>Jugar</button>
             <p class=“message js-message”>¡Vamos a jugar!</p>
+            <p class="playerResult">Jugador:</p>
             <input type=“number” id=“playerInput” name=“playerInput” class=“playerInput js-playerInput” />
+            <p class="computerResult">Ordenador:</p>
             <input type=“number” id=“computerInput” name=“computerInput” class=“computerInput js-computerInput” />
         </form>
     </main>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
